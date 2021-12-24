@@ -1,55 +1,31 @@
 "use strict";
 
-let num = 20;
+const str = 'test';
 
-function showFirstMessage(text) {
-    console.log(text);
-    console.log(num);
-}
+// console.log(str[2] = 'd');
 
-showFirstMessage("Hello world");
-console.log(num);
+// console.log(str.toUpperCase());
+console.log(str.toLowerCase());
+console.log(str);
 
-function calc(a, b) {
-    return (a + b);
-}
+const fruit = "Some fruit";
 
-console.log(calc(4, 3));
-console.log(calc(5, 6));
-console.log(calc(10, 6));
+console.log(fruit.indexOf("i"));
 
-function ret() {
-    let num = 50;
+const logg = "Hello world";
 
-    //
+// console.log(logg.slice(6, 11));
 
-    return num;
-}
+// console.log(logg.substring(6, 11));
 
-const anotherNum = ret();
-console.log(anotherNum);
+console.log(logg.substr(6, 5));
 
+const num = 12.2;
 
-// Функциональное выражение (Функциональное выражение - Function Expression) - Создаётся только тогда, когда до неё доходит поток кода, можно вызвать только после объявления.
+console.log(Math.round(num));
 
-const logger = function() {
-    console.log("Hello");
-};
+const test = "12.2px";
 
-logger();
+// console.log(parseInt(test));
+console.log(parseFloat(test));
 
-
-// Стрелочные функции
-
-const calc = (a, b) => a + b;
-
-// или
-
-const calc = (a, b) => { return a + b };
-
-// или
-
-const calc = (a, b) => {
-    console.log('1');
-    return a + b;
-}
